@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facial Authentication System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Intelligent Facial Authentication<br>Security Alert System</h1>
+
+    <form action="/enroll" method="post">
+        <input type="text" name="user_id" placeholder="Enter User ID" required>
+        <button>Enroll User</button>
+    </form>
+
+    <a href="/train"><button>Train Model</button></a>
+    <a href="/recognize"><button>Authenticate User</button></a>
+</div>
+
+</body>
+</html>

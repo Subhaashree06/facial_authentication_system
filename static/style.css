@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BACKGROUND GRADIENT ===== */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== MAIN CARD ===== */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 420px;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ===== TITLE ===== */
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #1d2671;
+    line-height: 1.4;
+}
+
+/* ===== INPUT ===== */
+.container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container input:focus {
+    border-color: #1d2671;
+    box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.15);
+}
+
+/* ===== BUTTONS ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(29, 38, 113, 0.35);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ===== SPACING BETWEEN BUTTONS ===== */
+form + form {
+    margin-top: 10px;
+}
+
+/* ===== SMOOTH ENTRY ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
